@@ -2,6 +2,14 @@
 
 A free, minimal, habit-forming Quizlet alternative. 100% of features are free, and your data never leaves your device (localStorage).
 
+![Home — dashboard with streak, daily goal ring, XP level, and deck grid](screenshots/home.png)
+
+![Deck — card list with progress bars, leech badges, and study mode buttons](screenshots/deck.png)
+
+![Flashcards — 3D flip with FSRS-graded rating buttons and keyboard hints](screenshots/flashcards.png)
+
+![Learn — adaptive multiple choice with instant correct/incorrect feedback](screenshots/learn.png)
+
 ## Study modes
 
 - **Flashcards** — FSRS-scheduled flip cards in groups of 7 (bite-sized memorization). Keyboard: `Space` to flip, `1–4` to grade (Again / Hard / Good / Easy) with next-interval previews. Leech detection flags cards that keep slipping.
@@ -34,7 +42,11 @@ Modeled on the Duolingo method + behavioral psychology research:
 - Folders group sets with aggregate mastery progress
 - Export any deck as CSV or JSON
 
-## Run
+## Download
+
+Grab the latest DMG from the [release folder](release/openQuizlet_0.1.0_aarch64.dmg) — just drag openQuizlet to your Applications folder.
+
+## Run from source
 
 ```sh
 npm install
@@ -45,4 +57,4 @@ npx tauri build    # Mac app → src-tauri/target/release/bundle/
 
 ## Stack
 
-React + TypeScript + Vite + MUI (light/dark minimal themes), canvas-confetti, WebAudio synth SFX, Tauri v2. No backend, no accounts, no ads.
+React + TypeScript + Vite + MUI (Apple-inspired design system), canvas-confetti, WebAudio synth SFX, Tauri v2. No backend, no accounts, no ads.
